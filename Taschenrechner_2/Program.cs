@@ -16,9 +16,12 @@ namespace Taschenrechner_2
 
 
             double erg = erste + zweite;
-            Console.WriteLine("das Ergebnis lautet {0}", erg);
+            Console.WriteLine("das Ergebnis lautet {0}", e456rg);
 
             Console.ReadLine();
+
+
+
 
 
         }
