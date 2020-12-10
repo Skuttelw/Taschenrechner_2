@@ -20,6 +20,10 @@ namespace Taschenrechner_2
 
             Console.ReadLine();
 
+            
+            
+
+
 
         }
     }
