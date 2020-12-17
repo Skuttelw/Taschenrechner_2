@@ -4,28 +4,41 @@ namespace Taschenrechner_2
 {
     class Program
     {
+        static string HoleZahl(string ausgabetext)
+        {
+            Console.WriteLine(ausgabetext);
+            string Zahl = Console.ReadLine();
+            return Zahl;
+
+        }
+
+
+        static double WandleInDouble(string zahl)
+        {
+            double gewandelt = Convert.ToDouble(zahl);
+            return gewandelt;
+        }
+
         static void Main(string[] args)
         {
-            
-            //Eingabe der Zahlen
-            Console.WriteLine("gibt die Erste Zahl ein:");
-            string ersteZahl = Console.ReadLine(); 
-            Console.WriteLine("gibt die Zweite Zahl ein:");
-            string zweiteZahl = Console.ReadLine();
 
 
-            //Umwandeln in ein Double
-            double erste = Convert.ToDouble(ersteZahl);
-            double zweite = Convert.ToDouble(zweiteZahl);
+            //Eingabe
+            string erste = HoleZahl("gibt die erste Zahl ein:");
+            string zweite = HoleZahl("gibt die zweite Zahl ein:");
+            //wandel in´Double
+            double ersted = WandleInDouble(erste);
+            double zweited = WandleInDouble(zweite);
 
-            double erg= Addiere(erste, zweite);
+            //addieren
+            double erg = Addiere(ersted, zweited);
             //Ausgabe
             Console.WriteLine("das Ergebnis lautet {0}", erg);
 
 
             WartenaufBenutzereingabe();
-            
-            
+
+
 
 
 
